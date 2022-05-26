@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@400;500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    color: black !important;
+}
+
+body{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    background-color: #ffff;
+    
+}
+
+.container{
+    padding:0 12%;
+    margin:0;
+}
+
+/**********************NAVBAR SECTION ************************************/
+.navbar{
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar #menu{
+    cursor: pointer;
+    width: 60px;
+    display: none;
+}
+
+.navbar #logo{
+    font-size: 36px;
+}
+
+.navbar #nav{
+    display:flex;
+}
+
+.navbar #nav li {
+   list-style: none;
+   color: #fff;
+   }
+
+.navbar #nav li a{
+ color: #fff;
+ padding: 0 20px;
+ text-decoration: none;
+ font-size: 20px;
+}
+
+/**********************INTRODUCTION SECTION ************************************/
+#hero{
+    display: flex;
+}
+
+#hero #image{
+    width: 50%;
+   
+}
+
+#hero #intro {
+    font-size:26px;
+    color: #fff;
+}
+
+#hero #intro span{
+    font-size:24px;
+    color: #fff;
+}
+
+#hero #intro a{
+    padding:5px 10px;
+    color: #fff;
+    border: white 1px solid;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: #1798B5;
+}
+
+#hero #intro a:hover{
+   background: transparent;
+    border: #fff 1px solid;
+    color: #B21360;
+}
+
+
+/**********************ABOUT SECTION ************************************/
+#about-me{
+    text-align:center;
+    margin-bottom: 100px;
+}
+#about-me h2{
+    color: #fff;
+    font-size: 24px;
+}
+#about-me h2 span{
+    color: #B21360;
+    font-size: 24px;
+}
+
+#about-me p{
+    color: #fff;
+    font-size: 18px;
+}
+
+.tech-skills #h-skills{
+    color: #fff;
+    font-size: 24px;
+}
+
+.tech-skills #skills-section{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: 50px;
+}
+
+/* .tech-skills #skills-section #front-end, #back-end{
+   border: #b4b1c4 1px solid;
+   border-radius: 20px;
+
+    } */
+
+ .tech-skills #skills-section #front-end ul li, #back-end ul li{
+   color: #fff;
+   list-style: none;
+    }
+
+    .tech-skills #skills-section #front-end img, #back-end img{
+        width: 100px;
+         }
+
+    /**********************PROJECTS SECTION ************************************/
+
+#project-section{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#project-section h2{
+    color: #B21360;
+    font-size: 24px;
+}
+
+#project-section #projects {
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: 50px;
+   
+}
+
+#project-section #projects #project{
+    border: rgb(255, 255, 255) 1px solid;
+  border-radius: 15px;
+  
+}
+
+#project-section #projects div img{
+    width: 95%;
+    padding-top: 10px;
+    
+ }
+
+ #project-section #projects div p, span{
+    color: #fff;
+    
+ }
+
+ #project-section #projects div  span{
+    padding: 0px 20px;
+    background-color: rgb(126, 33, 102);
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
+ }
+
+ #project-section #projects div #links {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+   padding: 10px 20px;
+ }
+
+ #project-section #projects div #links a:hover {
+    opacity: 0.9;
+     transform: scale(0.98);
+  }
+
+ #project-section #projects div #links a{
+    border: rgb(143, 163, 122) 1px solid;
+    padding: 7px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    
+  }
+ 
+
+/**********************CONTACT SECTION ************************************/
+#contact{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+form .form-row{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+#email, #name , textarea {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 15px;
+
+}
+
+#email, #name , textarea:focus {
+    outline: none;
+}
+
+form #btn{
+    margin-top: 20px;
+    border: none;
+    text-align: center;
+     font-size: 18px;
+    padding: 10px 60px;
+  border-radius: 25px;
+  background-color: #1798B5;
+  cursor: pointer;
+  
+}
+
+form #btn:hover{
+   background: transparent;
+   border: #b4b1c4 1px solid;
+   color: #fff;
+}
+
+.navbar #nav .active{
+    display:inline-block;
+}
+
+
+
+
+
+/**********************FOOTER SECTION ************************************/
+footer{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 1080px){
+   #hero{
+       flex-direction: column-reverse;
+   }
+}
+
+@media only screen and (max-width: 800px){
+    #email, #name, textarea{
+        width: 80%;
+    }
+
+    /* .navbar #menu{
+        display: block;
+    }
+
+    .navbar #nav{
+        display: block;
+        float: left;
+        position: absolute;
+        left: 0;
+        top: 10%;
+        z-index: 1;
+    }
+
+    .navbar #nav li{
+        padding-bottom: 20px;
+        font-size: 24px;
+    } */
+
+    
+    
+}
+
+
+@media only screen and (max-width: 740px){
+    
+    .navbar #menu{
+        display: block;
+    }
+
+    .navbar #nav{
+        display: none;
+    }
+
+    .navbar #nav.responsive{
+        display: block;
+        float: left;
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        z-index: 1;
+        background-color: rgb(11, 11, 36);
+        width: 80%;
+        
+    }
+
+    .navbar #nav li{
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    
+    
+}

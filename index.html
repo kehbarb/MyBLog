@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <!-- NAVBAR SECTION  -->
+    <div class="navbar">
+        <h1 id="logo">Terry</h1>
+    </div>
+
+
+<!-- INTRODUCTION SECTION  -->
+    <div id="hero">
+        <p id="intro">
+        <span>Hi,</span><br/>
+        My name is Terry Nyakio a student at Zetech studying Bsc Information Technology.
+        Interested in networking and cyber security currently taking a course in Cyber Security
+        </p>
+        
+      <img id="image" src="images/cyber.jpg" alt="image" />
+      
+    </div>
+
+
+<!-- ABOUT SECTION  -->
+    <div id="about-me">
+    
+      
+             <div class="tech-skills">
+          <h2 id="h-skills">Technical Skills</h2>
+            
+          <div id="skills-section">
+
+              <div id="front-end">
+               <img src="images/bug.png" alt="" />
+               <img src="images/cyber-security (1).png" alt="" />
+               <img src="images/cyber-security.png" alt="" />
+              </div>
+          </div>
+        </div>
+    </div>
+
+
+ 
+
+    <!-- CONTACT SECTION  -->
+        <div id="contact">
+            <h2>Contact me</h2>
+
+             <p>Email: nyakioterry@gmail.com</p>
+             <p>Tel: +254721827564</p>
+    </div>
+
+
+    <!-- FOOOTER SECTION  -->
+
+
+
+    <script>
+        document.getElementById("menu").addEventListener("click", function() {
+          var x = document.getElementById("nav");
+          if (x.className === "navlinks") {
+            x.className += " responsive";
+          } else {
+            x.className = "navlinks";
+          }
+        }) 
+        </script>
+</div>
+</body>
+</html>
