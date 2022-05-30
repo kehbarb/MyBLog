@@ -2,7 +2,8 @@
 
 *{
     font-family: 'Poppins', sans-serif;
-    color: black !important;
+    color: white;
+    background-color: #070b1b;
 }
 
 body{
@@ -14,7 +15,7 @@ body{
 }
 
 .container{
-    padding:0 12%;
+    padding:0 5%;
     margin:0;
 }
 
@@ -33,7 +34,7 @@ body{
 }
 
 .navbar #logo{
-    font-size: 36px;
+    font-size: 56px;
 }
 
 .navbar #nav{
@@ -63,13 +64,13 @@ body{
 }
 
 #hero #intro {
-    font-size:26px;
+    font-size:20px;
     color: #fff;
 }
 
 #hero #intro span{
-    font-size:24px;
-    color: #fff;
+    font-size:36px;
+    color: rgb(17, 13, 13) !important;
 }
 
 #hero #intro a{
